@@ -20,7 +20,7 @@ vscode插件使用文档：[https://cloud.tencent.com/document/product/583/38106
 
 4、修改 web/index.js 的ajax请求的url 为你的 api 网关触发器的访问路径
 
-5、web 部分的静态资源，html,css和js等，可以根据你的爱好，可以部署到 cos，或者本地打开也可。
+5、web 部分的静态资源，html,css和js等，可以根据你的喜好，可以部署到 cos，或者本地打开也可。
 
 6、访问html页面后，就可以选择一张人像图片，点击Generating a Christmas hat的按钮，戴上圣诞帽了。
 
