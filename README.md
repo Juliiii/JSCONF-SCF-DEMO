@@ -9,7 +9,7 @@
 
 2、进到wearChristmasHat这个文件夹，npm run deploy:install 安装依赖
 
-3、使用vscode插件，或者scf cli，或者通过腾讯云scf控制台，部署 wearChristmasHat 到 scf，同时去该函数的网关触发器的控制台开启 cors 的开关
+3、使用vscode插件，或者scf cli，或者通过腾讯云scf控制台，部署 wearChristmasHat 到 scf，同时去腾讯云apigw控制台开启该函数的api网关触发器的 支持cors 的开关
 
 4、修改 web/index.js 的请求 url 为你的 api 网关触发器的访问路径
 
