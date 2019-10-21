@@ -1,7 +1,13 @@
 ## JSCONF-SCF-DEMO
 
-结合腾讯云 SCF 和 AI 实现
+结合腾讯云 SCF 和 AI 实现的一个h5应用
 根据上传的人脸图片，自动为人脸戴上圣诞帽
+
+## Live Demo
+
+[demo](https://jsconfdemo-1253970226.cos.ap-guangzhou.myqcloud.com/index.html)
+
+手机打开使用效果更佳
 
 ## How to run
 
