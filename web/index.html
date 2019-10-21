@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WearChristmasHat</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link
+      href="https://cdn.bootcss.com/cropper/4.0.0/cropper.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.bootcss.com/jquery-toast-plugin/1.3.2/jquery.toast.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header-background-image"></div>
+    <div class="body">
+      <input
+        class="image-upload-input"
+        type="file"
+        name="image"
+        accept="image/*"
+      />
+      <div class="image">
+        <img id="finalImg" />
+        <svg
+          t="1570816520928"
+          class="image-upload-icon"
+          viewBox="0 0 1024 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="7182"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="120"
+          height="120"
+        >
+          <defs><style type="text/css"></style></defs>
+          <path
+            d="M955.769524 734.466768c-0.13917 0-4.313236-8.118911-9.275247-18.036795L816.444339 456.344422c-4.962012-9.923-18.093077-18.035772-29.181623-18.030655l-107.787912 0.033769c-11.089569 0.004093-20.163225 9.080819-20.163225 20.174482l0 34.266431c0 11.089569 9.073656 20.170388 20.163225 20.181645l34.267455 0.023536c11.094686 0.002047 24.193005 8.146541 29.116131 18.085914l92.175329 186.263218c4.916986 9.943466-0.128937 18.077727-11.224646 18.077727L677.409772 735.420489c-11.094686 0-20.169365 9.075703-20.169365 20.164249l0 105.501846c0 11.089569-9.074679 20.163225-20.167319 20.163225L383.359666 881.249809c-11.093662 0-20.169365-9.073656-20.169365-20.163225L363.190301 755.585761c0-11.088546-9.074679-20.164249-20.163225-20.164249L193.657116 735.421512c-11.094686 0-16.003486-8.066723-10.918677-17.923208l96.398514-186.870038c5.087878-9.856485 18.319228-17.911952 29.408797-17.906835l33.378202 0.022513c11.095709 0.005117 20.169365-9.063423 20.169365-20.151969l0-33.967626c0-11.095709-9.073656-20.164249-20.169365-20.164249l-107.283422 0.039909c-11.094686 0-24.242124 8.112772-29.226648 18.024515L74.71926 716.616214c-4.978385 9.907651-8.933463 18.014282-8.792247 18.014282 0.14224 0 0.260943 9.074679 0.260943 20.169365l0 183.128831c0 11.094686 9.067516 20.169365 20.162202 20.169365l849.507874 0c11.096732 0 20.169365-9.074679 20.169365-20.169365L956.027397 754.629993C956.020234 743.532237 955.908694 734.466768 955.769524 734.466768L955.769524 734.466768zM326.291926 294.249651l110.674659 0L436.966585 659.44205 585.181231 659.44205 585.181231 294.249651l116.595508 0c11.097756 0 14.150278-6.79373 6.794753-15.093766L524.899286 71.90875c-7.355525-8.299013-19.308765-8.226359-26.567076 0.158612L319.322188 278.997272C312.063877 287.388383 315.20338 294.249651 326.291926 294.249651L326.291926 294.249651zM326.291926 294.249651"
+            p-id="7183"
+            fill="#fff"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="button-container">
+        <button class="button addHat-button">
+          <i aria-label="图标: loading" class="hidden loading-icon"
+            ><svg
+              viewBox="0 0 1024 1024"
+              focusable="false"
+              data-icon="loading"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M988 548c-19.9 0-36-16.1-36-36 0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 0 0-94.3-139.9 437.71 437.71 0 0 0-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.3C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3.1 19.9-16 36-35.9 36z"
+              ></path>
+            </svg>
+          </i>
+          <span class="addHat-button-text">Generating a Christmas hat</span>
+        </button>
+      </div>
+    </div>
+
+    <div style="display: none" class="tailoring-container">
+      <div class="trailoring-mask"></div>
+      <div class="tailoring-content">
+        <img id="tailoringImg" />
+        <div class="tailoring-content-footer">
+          <button id="cancel-button">Cancel</button>
+
+          <button id="sure-button">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/cropper/4.0.0/cropper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lrz@4.9.40/dist/lrz.all.bundle.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-toast-plugin/1.3.2/jquery.toast.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

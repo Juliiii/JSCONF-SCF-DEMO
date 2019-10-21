@@ -1,0 +1,21 @@
+{
+  "name": "wearchristmashat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:install": "npm i && rm -rf node_modules/sharp && npm install --save sharp@0.22.0",
+    "deploy:install": "npm i && rm -rf node_modules/sharp && npm install --arch=x64 --platform=linux --target=8.9.0 --save sharp@0.22.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.8.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa2-cors": "^2.0.6",
+    "qcloudapi-sdk": "^0.2.1",
+    "serverless-http": "^2.3.0",
+    "sharp": "^0.22.0"
+  }
+}
