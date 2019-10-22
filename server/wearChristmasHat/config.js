@@ -1,4 +1,4 @@
 module.exports = {
-  secretId: "your sercret id",
+  secretId: "your secret id",
   secretKey: "your secret key"
 };
