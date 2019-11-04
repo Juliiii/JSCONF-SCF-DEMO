@@ -28,12 +28,7 @@ $(function() {
 
     $.ajax({
       url:
-        "https://service-5yjoimbu-1253970226.gz.apigw.tencentcs.com/release/wearChristmasHat_no_ai",
-      // url: "http://127.0.0.1:18009/wearChristmasHat",
-      // url:
-      //   "https://service-5yjoimbu-1253970226.gz.apigw.tencentcs.com/release/wearChristmasHat_v1",
-      // url:
-      //   "https://service-5yjoimbu-1253970226.gz.apigw.tencentcs.com/release/wearChristmasHat_v2",
+        "https://service-a0qpaezq-1253970226.gz.apigw.tencentcs.com/release/wearChristmasHat_v2",
 
       type: "POST",
       data: {
