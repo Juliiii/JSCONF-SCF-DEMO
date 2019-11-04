@@ -3,6 +3,10 @@
 结合腾讯云 SCF 和 AI 实现的一个h5应用
 根据上传的人脸图片，自动为人脸戴上圣诞帽
 
+## 环境
+
+nodejs 10.6.3
+
 ## Live Demo
 
 [demo](https://jsconfdemo-1253970226.cos.ap-guangzhou.myqcloud.com/index.html)
