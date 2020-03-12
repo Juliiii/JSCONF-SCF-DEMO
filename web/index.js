@@ -27,8 +27,7 @@ $(function() {
     };
 
     $.ajax({
-      url:
-        "https://service-a0qpaezq-1253970226.gz.apigw.tencentcs.com/release/wearChristmasHat_v2",
+      url: window.env.apiUrl[0].url,
 
       type: "POST",
       data: {
