@@ -15,7 +15,7 @@ nodejs 10.6.3
 
 ## How to run
 
-#### 1、将云 api 秘钥填写进课程代码的配置文件
+#### 1、下载项目
 
 ```
 git clone git@github.com:Juliiii/JSCONF-SCF-DEMO.git
